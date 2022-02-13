@@ -37,7 +37,7 @@ const Auth = () => {
     e.preventDefault();
     setIsLoadingGuest(true);
     dispatch({ type: AUTH_ERROR_OCCURRED, payload: "" });
-    dispatch(loginUser({ email: atob(process.env.REACT_APP_GUEST_EMAIL), password: atob(process.env.REACT_APP_GUEST_PASS) }, history, state));
+    dispatch(loginUser({ email: "harsh@gmail.com", password: "harsh123" }, history, state));
   }
 
   const handleSubmit = (e) => {

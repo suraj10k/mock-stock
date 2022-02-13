@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Stocks from '../../../assets/images/stocks.svg';
 
 const Landing = () => {
-  const [user,] = useState(JSON.parse(localStorage.getItem('profile')));
+  const [user] = useState(JSON.parse(localStorage.getItem('profile')));
 
   return (
     <header className="bg-white dark:bg-gray-800">
